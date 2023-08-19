@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MyWebPage</title>
+        <style>
+           p
+            {
+                height: 220px;
+                width: 220px;
+                border: 8px groove green;
+                background-color: indianred;
+               padding-left:50px
+               padding-top:50px;
+           
+            }
+        </style>
+    </head>
+    <body>
+        <p>Welcome</p>
+    </body>
+</html>
