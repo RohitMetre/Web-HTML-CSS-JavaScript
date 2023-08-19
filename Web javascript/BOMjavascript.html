@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My webpage</title>
+    </head>
+    <body>
+        <h2 id="one" style="color: red;"></h2>
+        <h2 id="two"></h2>
+        <button onclick="winopen()">Open</button>
+        <button onclick="winclose()">Close</button>
+        <script>
+            document.getElementById("one").innerHTML="Height of browser: "+screen.height+"px"
+            document.getElementById("two").innerHTML="width of browser: "+screen.width+"px"
+            
+            var winopen=function()
+            {
+                window.open("https://www.kodnest.com")
+            }
+            var winclose=function()
+            {
+                window.close()
+            }
+        
+        </script>
+    </body>
+</html>

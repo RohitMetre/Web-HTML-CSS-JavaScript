@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+              #box
+              {
+                border: 5px groove red;
+                height: 500px;
+                width: 500px;
+                background-color: antiquewhite;
+              }
+              #circle
+              {
+                border: 5px solid green;
+                height: 100px;
+                width: 100px;
+                background-color: green;
+                border-radius: 100px;
+                position: absolute;
+              }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="circle"></div>
+        </div>
+        <br>
+        <button onclick="ani_fun()">Click</button>
+        <script>
+           function ani_fun()
+            {
+                var circle=document.getElementById("circle")
+                var cirpix=0
+                var ani_start=setInterval(oct_ani,5)
+                function oct_ani()
+                {
+                    if(cirpix=300)
+                    {
+                        clearInterval(ani_start)
+                    }
+                    else
+                    {
+                        cirpix++
+                        circle.style.top=cirpix+"px"
+                        circle.style.left=cirpix+"pix"
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
